@@ -17,16 +17,14 @@ select,input[type=search]{width:100%;background:var(--panel2);color:white;border
 .skillgrid{display:grid;grid-template-columns:1fr;gap:8px}.searchWrap{position:relative}.searchLabel{display:block;font-size:12px;color:var(--muted);margin:0 0 6px 2px}.suggestions{display:none;position:absolute;z-index:20;left:0;right:0;top:100%;margin-top:5px;max-height:230px;overflow:auto;background:#07111f;border:1px solid #3c5d86;border-radius:12px;box-shadow:0 14px 30px rgba(0,0,0,.4)}.suggestions.show{display:block}.suggestion{width:100%;border:0;border-bottom:1px solid #1e324d;background:#0b1728;color:#fff;text-align:left;padding:12px}.suggestion:last-child{border-bottom:0}.suggestion:active{background:#173155}.noResult{padding:12px;color:var(--muted);font-size:13px}.levels{display:grid;grid-template-columns:repeat(4,1fr);gap:7px}.lv{border:1px solid #314561;background:#0a1424;color:#c7d1df;border-radius:10px;padding:10px 0;font-weight:850}.lv.on{background:linear-gradient(180deg,#5a4516,#33270d);border-color:var(--gold);color:var(--gold2)}
 .warn{display:none;margin-top:9px;font-size:12px;color:var(--red)}.warn.show{display:block}
 .result{text-align:center;padding:21px 14px}.label{color:var(--muted);font-size:13px}.total{font-size:48px;line-height:1.05;font-weight:950;margin:6px 0;color:var(--gold)}.rank{font-weight:900;margin:8px 0 4px}.next{color:var(--muted);font-size:12px;margin-top:3px}.breakdown{display:grid;gap:7px;margin-top:14px;text-align:left}.breakitem{display:flex;justify-content:space-between;gap:12px;background:#0b1728;border:1px solid #233651;border-radius:11px;padding:10px 11px;font-size:13px}.breakitem span:last-child{font-weight:850;color:#dbe7f5}
-.toolbar{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:10px}.action{padding:12px 8px;border-radius:12px;border:1px solid var(--line);background:#0c1728;color:white;font-weight:850}.action.primary{background:linear-gradient(180deg,#5a4516,#33270d);border-color:var(--gold);color:var(--gold2)}
-.saved{display:none}.saved.show{display:block}.savedlist{display:grid;gap:8px}.saveditem{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center;background:#0b1728;border:1px solid #233651;border-radius:12px;padding:10px}.saveditem button{border:0;border-radius:9px;padding:8px 10px;background:#243958;color:#fff}
+.toolbar{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:10px}.action{padding:12px 8px;border-radius:12px;border:1px solid var(--line);background:#0c1728;color:white;font-weight:850}.action.primary{background:linear-gradient(180deg,#5a4516,#33270d);border-color:var(--gold);color:var(--gold2)}
+.saved{display:none}.saved.show{display:block}.savedlist{display:grid;gap:8px}.saveditem{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center;background:#0b1728;border:1px solid #233651;border-radius:12px;padding:10px}.savedActions{display:flex;gap:6px}.saveditem button{border:0;border-radius:9px;padding:8px 10px;background:#243958;color:#fff}.saveditem .deleteSaved{background:#3b2028;color:#ffd9df}.conditionTag{display:inline-flex;align-items:center;margin-top:8px;padding:4px 8px;border:1px solid #665328;border-radius:999px;background:#211b0b;color:#f3d77e;font-size:11px;font-weight:800}.conditionLine{display:block;margin-top:4px;color:#d7bb69;font-size:11px;line-height:1.45}.dataNotice{border-color:#514522;background:linear-gradient(180deg,rgba(43,35,13,.7),rgba(16,22,31,.97))}
 .note{font-size:12px;line-height:1.55;color:var(--muted);margin-top:13px}.footer{text-align:center;color:#8f8a7e;font-size:11px;margin-top:20px;line-height:1.7}.footer strong{color:var(--gold);letter-spacing:.6px}
 
 .badgeBtn{appearance:none;cursor:pointer}.resultHero{display:flex;flex-direction:column;align-items:center;gap:4px}
 .gradeBadge{display:inline-flex;align-items:center;justify-content:center;min-width:112px;padding:8px 16px;border:1px solid #745c20;border-radius:999px;background:linear-gradient(180deg,#30240c,#171207);color:var(--gold2);font-size:18px;font-weight:950;box-shadow:0 8px 24px rgba(214,173,69,.12)}
 .resultMeta{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:14px}
 .metaBox{background:#0b1728;border:1px solid #233651;border-radius:12px;padding:11px 8px}.metaLabel{font-size:11px;color:var(--muted)}.metaValue{margin-top:4px;font-weight:900;color:#f4ead0}
-.recommend{margin-top:10px}.recommendList{display:grid;gap:8px}.recommendItem{background:linear-gradient(180deg,#171a20,#101319);border:1px solid #4b4026;border-radius:13px;padding:12px}
-.recTop{display:flex;justify-content:space-between;gap:10px;align-items:center}.recGain{color:var(--green);font-weight:950}.recSwap{margin-top:7px;font-size:13px;line-height:1.55;color:#e9e3d4}.recArrow{color:var(--gold);padding:0 5px}.emptyState{color:var(--muted);font-size:13px;line-height:1.55;text-align:center;padding:10px 4px}
 .modal{display:none;position:fixed;inset:0;z-index:100;background:rgba(0,0,0,.72);padding:18px;align-items:center;justify-content:center}.modal.show{display:flex}.modalCard{width:min(560px,100%);max-height:82vh;overflow:auto;background:#11151d;border:1px solid #5a4820;border-radius:18px;padding:18px;box-shadow:0 24px 70px rgba(0,0,0,.55)}.modalHead{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:12px}.modalHead h2{margin:0;font-size:19px}.closeBtn{border:1px solid var(--line);background:#0c1728;color:#fff;border-radius:10px;padding:8px 11px;font-weight:850}.patch{padding:12px 0;border-top:1px solid #2d3038}.patch:first-of-type{border-top:0}.patch b{color:var(--gold2)}.patch ul{margin:7px 0 0;padding-left:20px;color:#d0ccc2;font-size:13px;line-height:1.65}
 
 
@@ -39,7 +37,7 @@ button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid 
 .suggestions{overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
 .suggestion{min-height:44px}
 .lv,.tab,.action{min-height:44px}
-@media(max-width:420px){.wrap{padding:12px 10px 28px}.brand{padding-top:10px}.podium{font-size:24px}.subtitle{font-size:14px}.card{padding:12px;border-radius:14px}.total{font-size:42px}.toolbar{grid-template-columns:1fr 1fr}.toolbar .primary{grid-column:1/-1}.resultMeta{grid-template-columns:1fr}.levels{gap:6px}.lv{padding:9px 0}.modal{padding:10px}.modalCard{padding:14px;max-height:88vh}}
+@media(max-width:420px){.wrap{padding:12px 10px 28px}.brand{padding-top:10px}.podium{font-size:24px}.subtitle{font-size:14px}.card{padding:12px;border-radius:14px}.total{font-size:42px}.toolbar{grid-template-columns:1fr 1fr}.toolbar .primary{grid-column:auto}.resultMeta{grid-template-columns:1fr}.levels{gap:6px}.lv{padding:9px 0}.modal{padding:10px}.modalCard{padding:14px;max-height:88vh}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
 @media(min-width:600px){.skillgrid{grid-template-columns:1.4fr 1fr}}
 </style>
@@ -47,7 +45,7 @@ button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid 
 <body>
 <div class="wrap">
   <header class="brand"><div class="brandMark">⚾</div><div class="podium">PODIUM</div><div class="subtitle">컴프야V26 스킬 계산기</div><div class="brandLine"></div></header>
-  <div class="top"><button id="patchBtn" class="badge badgeBtn" type="button">v1.6 · 업데이트</button></div>
+  <div class="top"><button id="patchBtn" class="badge badgeBtn" type="button">v1.9 · 업데이트</button></div>
   <div class="tabs"><button class="tab on" data-type="hitter">타자</button><button class="tab" data-type="pitcher">투수</button></div>
   <div id="pitcherRoleBox" class="card" style="display:none"><div class="rowtitle"><b>투수 보직</b></div><select id="pitcherRole"><option value="starter">선발</option><option value="reliever">중계</option><option value="closer">마무리</option></select></div>
   <div class="card"><div class="rowtitle"><b>카드 종류</b></div><select id="cardType"><option value="signature">시그니처</option><option value="impact">임팩트</option><option value="national">국가대표</option><option value="gold">골든글러브</option></select></div>
@@ -67,24 +65,19 @@ button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid 
     <div id="breakdown" class="breakdown"></div>
     <div id="globalWarn" class="warn"></div>
   </div>
-  <div class="card recommend">
-    <div class="rowtitle"><b>💡 추천 교체</b><span class="score">TOP 3</span></div>
-    <div id="recommendList" class="recommendList"></div>
-    <div class="note">같은 레벨을 유지한 채 총점이 오르는 단일 스킬 교체 후보를 계산합니다.</div>
-  </div>
-  <div class="toolbar"><button id="reset" class="action">초기화</button><button id="save" class="action">조합 저장</button><button id="share" class="action primary">링크 복사</button></div>
+  <div class="toolbar"><button id="reset" class="action">초기화</button><button id="save" class="action">조합 저장</button><button id="copyResult" class="action">결과 복사</button><button id="share" class="action primary">링크 공유</button></div>
+  <div class="card dataNotice"><div class="rowtitle"><b>계산 안내</b></div><div class="note" style="margin:0">괄호 안의 포지션·타순·주루·좌우타·버프 조건까지 충족했을 때의 점수입니다. 계산기는 조건 충족 여부를 자동으로 판단하지 않습니다.</div></div>
   <div id="savedBox" class="card saved"><div class="rowtitle"><b>저장한 조합</b><button id="clearSaved" class="action" style="padding:7px 10px">전체 삭제</button></div><div id="savedList" class="savedlist"></div></div>
-  <div class="footer"><strong>Developed by PODIUM</strong><br>출처: 교황 · 등급 컷은 검수 중 · v1.6</div>
+  <div class="footer"><strong>Developed by PODIUM</strong><br>출처: 교황 · 조건별 점수표 기준 · v1.9</div>
 </div>
 <div id="patchModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="patchTitle">
   <div class="modalCard">
     <div class="modalHead"><h2 id="patchTitle">🏆 PODIUM 업데이트</h2><button id="patchClose" class="closeBtn" type="button">닫기</button></div>
-    <div class="patch"><b>v1.6</b><ul><li>모바일 터치 영역과 작은 화면 배치 최적화</li><li>검색 자동완성 키보드 조작 지원</li><li>중복 스킬 선택 방지 안내 강화</li><li>저장 데이터 오류 복구와 공유 기능 안정화</li></ul></div>
-    <div class="patch"><b>v1.6</b><ul><li>카드 종류를 시그니처·임팩트·국가대표·골든글러브로 분리</li><li>기본 레벨 자동 설정: 시그/임팩트/국가대표 6·5·5, 골든글러브 6·6·6</li><li>국가대표 등급 컷은 시그니처 기준 적용</li></ul></div>
-    <div class="patch"><b>v1.6</b><ul><li>초성 검색 지원</li><li>잘못 등록된 투수 스킬 항목 제거</li><li>검색어 공백·기호 무시 개선</li></ul></div>
-    <div class="patch"><b>v1.3</b><ul><li>결과 화면을 한눈에 보이도록 개선</li><li>추천 교체 TOP 3 기능 추가</li><li>선택 완료 개수와 계산 기준 표시</li><li>업데이트 내역 창 추가</li></ul></div>
-    <div class="patch"><b>v1.2</b><ul><li>PODIUM 메탈릭 골드 디자인 적용</li><li>선발·중계·마무리 보직 구분</li><li>공유 링크와 저장 조합 기능 유지</li></ul></div>
-    <div class="patch"><b>안내</b><ul><li>등급 컷은 현재 검수 중입니다.</li><li>추천은 입력된 점수표 기준이며 실제 경기 체감과 다를 수 있습니다.</li></ul></div>
+    <div class="patch"><b>v1.9</b><ul><li>조건을 반영하지 못하는 TOP 3 추천 기능 완전 제거</li><li>포지션·타순·주루·좌우타·버프 조건을 선택 화면과 결과에 표시</li><li>현재 입력 자동 저장 및 다음 방문 시 복원</li><li>결과 텍스트 복사와 저장 조합 개별 삭제 추가</li><li>모바일 버튼 배치와 안내 문구 정리</li></ul></div>
+    <div class="patch"><b>v1.8</b><ul><li>점수 계산과 등급 확인 기능 중심으로 화면 정리</li><li>고급 스킬 변경권 시뮬레이터는 정확한 확률 확보 전까지 보류</li></ul></div>
+    <div class="patch"><b>v1.7</b><ul><li>3개 스킬 선택 전에는 등급을 표시하지 않도록 개선</li><li>초성 검색과 키보드 자동완성 지원</li><li>카드별 기본 레벨과 등급 컷 적용</li></ul></div>
+    <div class="patch"><b>v1.6 이하</b><ul><li>타자·투수 및 투수 보직 구분</li><li>조합 저장, URL 공유, 모바일 화면 최적화</li><li>PODIUM 메탈릭 골드 디자인 적용</li></ul></div>
+    <div class="patch"><b>안내</b><ul><li>점수는 제공된 스킬 점수표를 그대로 사용합니다.</li><li>조건형 스킬은 해당 조건을 충족한다는 전제로 계산됩니다.</li></ul></div>
   </div>
 </div>
 <script>
@@ -99,7 +92,7 @@ let type='hitter';
 let pitcherRole='starter';
 let state=[{idx:null,lv:6},{idx:null,lv:5},{idx:null,lv:5}];
 const $=s=>document.querySelector(s); const $$=s=>[...document.querySelectorAll(s)];
-const slots=$('#slots'), totalEl=$('#total'), rankEl=$('#rank'), nextEl=$('#next'), breakdown=$('#breakdown'), cardType=$('#cardType'), pitcherRoleEl=$('#pitcherRole'), pitcherRoleBox=$('#pitcherRoleBox'), globalWarn=$('#globalWarn'), gradeBadge=$('#gradeBadge'), selectedCount=$('#selectedCount'), calcBasis=$('#calcBasis'), recommendList=$('#recommendList');
+const slots=$('#slots'), totalEl=$('#total'), rankEl=$('#rank'), nextEl=$('#next'), breakdown=$('#breakdown'), cardType=$('#cardType'), pitcherRoleEl=$('#pitcherRole'), pitcherRoleBox=$('#pitcherRoleBox'), globalWarn=$('#globalWarn'), gradeBadge=$('#gradeBadge'), selectedCount=$('#selectedCount'), calcBasis=$('#calcBasis');
 const SEARCH_LIMIT=40;
 let suggestionCursor={};
 function safeJsonParse(raw,fallback){try{return JSON.parse(raw)}catch{return fallback}}
@@ -109,6 +102,9 @@ const CHOSEONG='ㄱㄲㄴㄷㄸㄹㅁㅂㅃㅅㅆㅇㅈㅉㅊㅋㅌㅍㅎ';
 function getChoseong(text){return [...String(text)].map(ch=>{const code=ch.charCodeAt(0)-0xAC00;return code>=0&&code<11172?CHOSEONG[Math.floor(code/588)]:ch}).join('')}
 function normalizeSearch(text){return String(text).toLowerCase().replace(/\s+/g,'').replace(/[·ㆍ()\[\]{},./~_+★☆-]/g,'')}
 function skillMatches(name,query){const q=normalizeSearch(query);if(!q)return true;const n=normalizeSearch(name);const c=normalizeSearch(getChoseong(name));return n.includes(q)||c.includes(q)}
+function conditionText(name){const m=String(name).match(/\(([^)]+)\)/);if(m)return m[1];if(name.includes('포수리드'))return '포수 전용·버프 포함';return ''}
+function persistCurrent(){try{localStorage.setItem('cpbv26-current',JSON.stringify(snapshot()))}catch{}}
+function hasUrlSelection(){const p=new URLSearchParams(location.search);return ['s1','s2','s3','type','role','card'].some(k=>p.has(k))}
 function roleAllowed(name){
   if(type!=='pitcher') return true;
   const hasStarter=/선발/.test(name), hasCloser=/마무리/.test(name);
@@ -128,6 +124,7 @@ function render(){
     card.innerHTML=`<div class="rowtitle"><b>스킬 ${n+1}</b><span class="score">${item?.[String(s.lv)]==null?'–':Number(item[String(s.lv)]).toFixed(2)}</span></div>
       <div class="skillgrid"><div class="searchWrap"><label class="searchLabel">스킬 이름 검색</label><input type="search" class="skillSearch" data-slot="${n}" placeholder="스킬명 또는 초성 입력 (예: ㅈㅁㅌㄱ)" value="${esc(item?.name||'')}" autocomplete="off"><div class="suggestions" data-suggestions="${n}"></div></div>
       <div class="levels">${[5,6,7,8].map(l=>`<button class="lv ${l===s.lv?'on':''}" data-slot="${n}" data-lv="${l}">Lv.${l}</button>`).join('')}</div></div>
+      ${item&&conditionText(item.name)?`<div class="conditionTag">조건: ${esc(conditionText(item.name))}</div>`:''}
       <div class="warn ${item?.[String(s.lv)]==null?'show':''}">이 스킬은 해당 레벨 점수값이 없습니다.</div>`;
     slots.appendChild(card);
   });
@@ -171,6 +168,7 @@ function render(){
     inp.onblur=()=>setTimeout(()=>{box.classList.remove('show');const idx=DB[type].findIndex(x=>x.name===inp.value);if(idx<0){inp.value=Number.isInteger(state[slot].idx)?DB[type][state[slot].idx].name:''}},180);
   });
   calc();
+  persistCurrent();
 }
 
 function typeLabel(){
@@ -180,43 +178,6 @@ function typeLabel(){
 function cardLabel(){
   return cardType.value==='signature'?'시그니처':cardType.value==='impact'?'임팩트':cardType.value==='national'?'국가대표':'골든글러브';
 }
-function renderRecommendations(vals,sum){
-  const selected=vals.filter(x=>x.selected);
-  if(!selected.length){
-    recommendList.innerHTML='<div class="emptyState">스킬을 선택하면 더 높은 점수의 교체 후보를 보여드려요.</div>';
-    return;
-  }
-  const chosenNames=new Set(selected.map(x=>x.name));
-  const recs=[];
-  state.forEach((slot,slotIndex)=>{
-    if(!Number.isInteger(slot.idx)) return;
-    const current=DB[type][slot.idx];
-    const currentValue=Number(current?.[String(slot.lv)] ?? 0);
-    DB[type].forEach((candidate,candidateIndex)=>{
-      if(candidateIndex===slot.idx || chosenNames.has(candidate.name) || !roleAllowed(candidate.name)) return;
-      const raw=candidate[String(slot.lv)];
-      if(raw==null) return;
-      const gain=Number(raw)-currentValue;
-      if(gain>0.0001){
-        recs.push({slotIndex,from:current.name,to:candidate.name,lv:slot.lv,gain,newTotal:sum+gain});
-      }
-    });
-  });
-  recs.sort((a,b)=>b.gain-a.gain || a.to.localeCompare(b.to,'ko'));
-  const top=[];
-  const seen=new Set();
-  for(const r of recs){
-    const key=`${r.slotIndex}:${r.to}`;
-    if(seen.has(key)) continue;
-    seen.add(key); top.push(r);
-    if(top.length===3) break;
-  }
-  recommendList.innerHTML=top.length?top.map((r,i)=>`<div class="recommendItem">
-    <div class="recTop"><b>추천 ${i+1}</b><span class="recGain">+${r.gain.toFixed(2)}점</span></div>
-    <div class="recSwap">${esc(r.from)} Lv.${r.lv}<span class="recArrow">→</span>${esc(r.to)} Lv.${r.lv}<br><span class="note">예상 총점 ${r.newTotal.toFixed(2)}</span></div>
-  </div>`).join(''):'<div class="emptyState">현재 선택보다 점수가 높은 단일 교체 후보가 없습니다.</div>';
-}
-
 function calc(){
   const vals=state.map(s=>{const x=Number.isInteger(s.idx)?DB[type][s.idx]:null;const raw=x?.[String(s.lv)];return {selected:!!x,name:x?.name||'',lv:s.lv,v:raw==null?0:Number(raw),missing:!!x&&raw==null}});
   const sum=vals.reduce((a,b)=>a+b.v,0); totalEl.textContent=sum.toFixed(2);
@@ -226,6 +187,8 @@ function calc(){
   const c=CUTS[cardType.value]; let idx=-1; for(let i=0;i<c.length;i++) if(sum>=c[i]) idx=i;
   if(count===0){
     gradeBadge.textContent='스킬을 선택하세요';rankEl.textContent='';nextEl.textContent='';
+  }else if(count<3){
+    gradeBadge.textContent=`입력 중 (${count}/3)`;rankEl.textContent='3개 스킬을 모두 선택하면 등급이 표시됩니다.';nextEl.textContent='';
   }else if(idx<0){
     gradeBadge.textContent='기준 미달';rankEl.textContent='3000위권 기준 미달';nextEl.textContent=`3000위권까지 ${(c[0]-sum).toFixed(2)}점`;
   }else if(idx===3){
@@ -233,29 +196,30 @@ function calc(){
   }else{
     gradeBadge.textContent=LABELS[idx];rankEl.textContent=`${LABELS[idx]} 기준 통과`;nextEl.textContent=`${LABELS[idx+1]}까지 ${(c[idx+1]-sum).toFixed(2)}점`;
   }
-  breakdown.innerHTML=vals.filter(x=>x.selected).map(x=>`<div class="breakitem"><span>${esc(x.name)} Lv.${x.lv}</span><span>${x.missing?'값 없음':x.v.toFixed(2)}</span></div>`).join('');
+  breakdown.innerHTML=vals.filter(x=>x.selected).map(x=>`<div class="breakitem"><span>${esc(x.name)} Lv.${x.lv}${conditionText(x.name)?`<small class="conditionLine">조건: ${esc(conditionText(x.name))}</small>`:''}</span><span>${x.missing?'값 없음':x.v.toFixed(2)}</span></div>`).join('');
   const names=vals.filter(x=>x.selected).map(x=>x.name); const dup=[...new Set(names.filter((x,i)=>names.indexOf(x)!==i))];
   const messages=[]; if(dup.length)messages.push(`중복 스킬: ${dup.join(', ')}`); if(vals.some(x=>x.missing))messages.push('점수값이 없는 레벨이 포함되어 있습니다.');
   globalWarn.textContent=messages.join(' · '); globalWarn.classList.toggle('show',messages.length>0);
-  renderRecommendations(vals,sum);
 }
 function buildParams(){const p=new URLSearchParams();if(type!=='hitter')p.set('type',type);if(type==='pitcher'&&pitcherRole!=='starter')p.set('role',pitcherRole);if(cardType.value!=='signature')p.set('card',cardType.value);state.forEach((s,i)=>{if(Number.isInteger(s.idx)){p.set(`s${i+1}`,s.idx);p.set(`l${i+1}`,s.lv)}});return p}
 function saveUrl(push=true){const q=buildParams().toString();const u=location.pathname+(q?'?'+q:'');history[push?'pushState':'replaceState'](null,'',u)}
 function loadParams(){const p=new URLSearchParams(location.search);type=['hitter','pitcher'].includes(p.get('type'))?p.get('type'):'hitter';pitcherRole=['starter','reliever','closer'].includes(p.get('role'))?p.get('role'):'starter';pitcherRoleEl.value=pitcherRole;pitcherRoleBox.style.display=type==='pitcher'?'block':'none';cardType.value=CUTS[p.get('card')]?p.get('card'):'signature';const preset=CARD_LEVEL_PRESETS[cardType.value];state=[0,1,2].map(i=>{const raw=p.get(`s${i+1}`),idx=raw===null?null:Number(raw),lv=Number(p.get(`l${i+1}`));return {idx:Number.isInteger(idx)&&DB[type][idx]?idx:null,lv:[5,6,7,8].includes(lv)?lv:preset[i]}});$$('.tab').forEach(b=>b.classList.toggle('on',b.dataset.type===type))}
+function restoreCurrent(){if(hasUrlSelection())return;const x=safeJsonParse(localStorage.getItem('cpbv26-current')||'null',null);if(!x||!['hitter','pitcher'].includes(x.type)||!CUTS[x.card]||!Array.isArray(x.state))return;type=x.type;pitcherRole=['starter','reliever','closer'].includes(x.role)?x.role:'starter';pitcherRoleEl.value=pitcherRole;cardType.value=x.card;state=x.state.slice(0,3).map((v,i)=>({idx:Number.isInteger(v?.idx)&&DB[type][v.idx]?v.idx:null,lv:[5,6,7,8].includes(v?.lv)?v.lv:CARD_LEVEL_PRESETS[x.card][i]}));$$('.tab').forEach(b=>b.classList.toggle('on',b.dataset.type===type))}
 function snapshot(){return {type,role:pitcherRole,card:cardType.value,state:JSON.parse(JSON.stringify(state)),savedAt:Date.now()}}
 function saved(){const v=safeJsonParse(localStorage.getItem('cpbv26-saved')||'[]',[]);return Array.isArray(v)?v:[]}
-function renderSaved(){const arr=saved();const box=$('#savedBox'),list=$('#savedList');box.classList.toggle('show',arr.length>0);list.innerHTML=arr.map((x,i)=>{const names=x.state.map(s=>DB[x.type]?.[s.idx]?.name||'?').join(' / ');return `<div class="saveditem"><div><b>${x.type==='hitter'?'타자':x.role==='closer'?'투수·마무리':x.role==='reliever'?'투수·중계':'투수·선발'} · ${esc(names)}</b><div class="note" style="margin:3px 0 0">${x.card==='signature'?'시그니처':x.card==='impact'?'임팩트':x.card==='national'?'국가대표':'골든글러브'}</div></div><button data-load="${i}">불러오기</button></div>`}).join('');$$('[data-load]').forEach(b=>b.onclick=()=>{const x=arr[+b.dataset.load];type=x.type;pitcherRole=x.role||'starter';pitcherRoleEl.value=pitcherRole;pitcherRoleBox.style.display=type==='pitcher'?'block':'none';cardType.value=x.card;state=x.state;$$('.tab').forEach(t=>t.classList.toggle('on',t.dataset.type===type));render();saveUrl(false)})}
+function renderSaved(){const arr=saved();const box=$('#savedBox'),list=$('#savedList');box.classList.toggle('show',arr.length>0);list.innerHTML=arr.map((x,i)=>{const names=x.state.map(s=>DB[x.type]?.[s.idx]?.name||'?').join(' / ');return `<div class="saveditem"><div><b>${x.type==='hitter'?'타자':x.role==='closer'?'투수·마무리':x.role==='reliever'?'투수·중계':'투수·선발'} · ${esc(names)}</b><div class="note" style="margin:3px 0 0">${x.card==='signature'?'시그니처':x.card==='impact'?'임팩트':x.card==='national'?'국가대표':'골든글러브'}</div></div><div class="savedActions"><button data-load="${i}">불러오기</button><button class="deleteSaved" data-delete="${i}">삭제</button></div></div>`}).join('');$$('[data-load]').forEach(b=>b.onclick=()=>{const x=arr[+b.dataset.load];type=x.type;pitcherRole=x.role||'starter';pitcherRoleEl.value=pitcherRole;pitcherRoleBox.style.display=type==='pitcher'?'block':'none';cardType.value=x.card;state=x.state;$$('.tab').forEach(t=>t.classList.toggle('on',t.dataset.type===type));render();saveUrl(false)});$$('[data-delete]').forEach(b=>b.onclick=()=>{arr.splice(+b.dataset.delete,1);localStorage.setItem('cpbv26-saved',JSON.stringify(arr));renderSaved()})}
 $$('.tab').forEach(b=>b.onclick=()=>{type=b.dataset.type;pitcherRoleBox.style.display=type==='pitcher'?'block':'none';$$('.tab').forEach(x=>x.classList.toggle('on',x===b));state=defaultState();render();saveUrl(false)});
 pitcherRoleEl.onchange=()=>{pitcherRole=pitcherRoleEl.value;state=defaultState();render();saveUrl(false)};
 cardType.onchange=()=>{applyCardLevelPreset();render();saveUrl(false)};
 $('#reset').onclick=()=>{state=defaultState();render();saveUrl(false)};
-$('#save').onclick=()=>{if(!state.some(s=>Number.isInteger(s.idx))){alert('먼저 스킬을 선택해주세요.');return}const arr=saved();arr.unshift(snapshot());try{localStorage.setItem('cpbv26-saved',JSON.stringify(arr.slice(0,12)));renderSaved();alert('조합을 저장했습니다.')}catch{alert('저장 공간을 사용할 수 없습니다.')}};
+$('#save').onclick=()=>{if(state.filter(s=>Number.isInteger(s.idx)).length<3){alert('스킬 3개를 모두 선택해주세요.');return}const arr=saved();arr.unshift(snapshot());try{localStorage.setItem('cpbv26-saved',JSON.stringify(arr.slice(0,12)));renderSaved();alert('조합을 저장했습니다.')}catch{alert('저장 공간을 사용할 수 없습니다.')}};
 $('#clearSaved').onclick=()=>{localStorage.removeItem('cpbv26-saved');renderSaved()};
+$('#copyResult').onclick=async()=>{const vals=state.map(s=>{const x=Number.isInteger(s.idx)?DB[type][s.idx]:null;const raw=x?.[String(s.lv)];return x?{name:x.name,lv:s.lv,v:raw==null?null:Number(raw)}:null}).filter(Boolean);if(vals.length<3){alert('스킬 3개를 모두 선택해주세요.');return}const sum=vals.reduce((a,x)=>a+(x.v||0),0);const lines=[`[컴프야V26 스킬 계산]`,`${typeLabel()} · ${cardLabel()}`,...vals.map(x=>`${x.name} Lv.${x.lv} — ${x.v==null?'값 없음':x.v.toFixed(2)}점`),`총점 ${sum.toFixed(2)}점 · ${gradeBadge.textContent}`];const text=lines.join('\n');try{await navigator.clipboard.writeText(text);alert('계산 결과를 복사했습니다.')}catch{prompt('아래 결과를 복사하세요.',text)}};
 $('#share').onclick=async()=>{const q=buildParams().toString();const url=location.href.split('?')[0]+(q?'?'+q:'');try{if(navigator.share){await navigator.share({title:'컴프야V26 스킬 계산기',url});return}await navigator.clipboard.writeText(url);alert('조합 링크를 복사했습니다.')}catch(e){if(e?.name!=='AbortError')prompt('아래 링크를 복사하세요.',url)}};
 const patchModal=$('#patchModal');
 $('#patchBtn').onclick=()=>patchModal.classList.add('show');
 $('#patchClose').onclick=()=>patchModal.classList.remove('show');
 patchModal.onclick=e=>{if(e.target===patchModal)patchModal.classList.remove('show')};
 document.addEventListener('keydown',e=>{if(e.key==='Escape')patchModal.classList.remove('show')});
-window.onpopstate=()=>{loadParams();render()};loadParams();render();renderSaved();
+window.onpopstate=()=>{loadParams();render()};loadParams();restoreCurrent();render();renderSaved();
 </script></body></html>
