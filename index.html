@@ -126,7 +126,7 @@ function render(){
     const item=Number.isInteger(s.idx)?DB[type][s.idx]:null;
     const card=document.createElement('div'); card.className='card';
     card.innerHTML=`<div class="rowtitle"><b>스킬 ${n+1}</b><span class="score">${item?.[String(s.lv)]==null?'–':Number(item[String(s.lv)]).toFixed(2)}</span></div>
-      <div class="skillgrid"><div class="searchWrap"><label class="searchLabel">스킬 이름 검색</label><input type="search" class="skillSearch" data-slot="${n}" placeholder="" value="${esc(item?.name||'')}" autocomplete="off"><div class="suggestions" data-suggestions="${n}"></div></div>
+      <div class="skillgrid"><div class="searchWrap"><label class="searchLabel">스킬 이름 검색</label><input type="search" class="skillSearch" data-slot="${n}" placeholder="스킬명 또는 초성 입력 (예: ㅈㅁㅌㄱ)" value="${esc(item?.name||'')}" autocomplete="off"><div class="suggestions" data-suggestions="${n}"></div></div>
       <div class="levels">${[5,6,7,8].map(l=>`<button class="lv ${l===s.lv?'on':''}" data-slot="${n}" data-lv="${l}">Lv.${l}</button>`).join('')}</div></div>
       <div class="warn ${item?.[String(s.lv)]==null?'show':''}">이 스킬은 해당 레벨 점수값이 없습니다.</div>`;
     slots.appendChild(card);
