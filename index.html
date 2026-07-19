@@ -17,8 +17,8 @@ select,input[type=search]{width:100%;background:var(--panel2);color:white;border
 .skillgrid{display:grid;grid-template-columns:1fr;gap:8px}.searchWrap{position:relative}.searchLabel{display:block;font-size:12px;color:var(--muted);margin:0 0 6px 2px}.suggestions{display:none;position:absolute;z-index:20;left:0;right:0;top:100%;margin-top:5px;max-height:230px;overflow:auto;background:#07111f;border:1px solid #3c5d86;border-radius:12px;box-shadow:0 14px 30px rgba(0,0,0,.4)}.suggestions.show{display:block}.suggestion{width:100%;border:0;border-bottom:1px solid #1e324d;background:#0b1728;color:#fff;text-align:left;padding:12px}.suggestion:last-child{border-bottom:0}.suggestion:active{background:#173155}.noResult{padding:12px;color:var(--muted);font-size:13px}.levels{display:grid;grid-template-columns:repeat(4,1fr);gap:7px}.lv{border:1px solid #314561;background:#0a1424;color:#c7d1df;border-radius:10px;padding:10px 0;font-weight:850}.lv.on{background:linear-gradient(180deg,#5a4516,#33270d);border-color:var(--gold);color:var(--gold2)}
 .warn{display:none;margin-top:9px;font-size:12px;color:var(--red)}.warn.show{display:block}
 .result{text-align:center;padding:21px 14px}.label{color:var(--muted);font-size:13px}.total{font-size:48px;line-height:1.05;font-weight:950;margin:6px 0;color:var(--gold)}.rank{font-weight:900;margin:8px 0 4px}.next{color:var(--muted);font-size:12px;margin-top:3px}.breakdown{display:grid;gap:7px;margin-top:14px;text-align:left}.breakitem{display:flex;justify-content:space-between;gap:12px;background:#0b1728;border:1px solid #233651;border-radius:11px;padding:10px 11px;font-size:13px}.breakitem span:last-child{font-weight:850;color:#dbe7f5}
-.toolbar{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:10px}.action{padding:12px 8px;border-radius:12px;border:1px solid var(--line);background:#0c1728;color:white;font-weight:850}.action.primary{background:linear-gradient(180deg,#5a4516,#33270d);border-color:var(--gold);color:var(--gold2)}
-.saved{display:none}.saved.show{display:block}.savedlist{display:grid;gap:8px}.saveditem{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center;background:#0b1728;border:1px solid #233651;border-radius:12px;padding:10px}.savedActions{display:flex;gap:6px}.saveditem button{border:0;border-radius:9px;padding:8px 10px;background:#243958;color:#fff}.saveditem .deleteSaved{background:#3b2028;color:#ffd9df}.conditionTag{display:inline-flex;align-items:center;margin-top:8px;padding:4px 8px;border:1px solid #665328;border-radius:999px;background:#211b0b;color:#f3d77e;font-size:11px;font-weight:800}.conditionLine{display:block;margin-top:4px;color:#d7bb69;font-size:11px;line-height:1.45}.dataNotice{border-color:#514522;background:linear-gradient(180deg,rgba(43,35,13,.7),rgba(16,22,31,.97))}
+.toolbar{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-top:10px}.action{padding:12px 8px;border-radius:12px;border:1px solid var(--line);background:#0c1728;color:white;font-weight:850}.action.primary{background:linear-gradient(180deg,#5a4516,#33270d);border-color:var(--gold);color:var(--gold2)}
+.compareCard{display:none}.compareCard.show{display:block}.compareGrid{display:grid;grid-template-columns:1fr auto 1fr;gap:10px;align-items:stretch}.compareSide{background:#0b1728;border:1px solid #233651;border-radius:13px;padding:12px}.compareSide.current{border-color:#745c20}.compareTitle{font-size:12px;color:var(--muted);margin-bottom:7px}.compareScore{font-size:28px;font-weight:950;color:var(--gold)}.compareGrade{font-weight:900;margin-top:2px}.compareSkills{margin-top:9px;font-size:12px;line-height:1.65;color:#ddd8cc}.compareVs{display:flex;align-items:center;justify-content:center;font-weight:950;color:var(--gold2)}.compareSummary{text-align:center;margin-top:12px;padding:11px;border-radius:12px;background:#171207;border:1px solid #5a4820;font-weight:900}.compareActions{display:flex;justify-content:center;gap:8px;margin-top:10px}.saved{display:none}.saved.show{display:block}.savedlist{display:grid;gap:8px}.saveditem{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center;background:#0b1728;border:1px solid #233651;border-radius:12px;padding:10px}.savedActions{display:flex;gap:6px}.saveditem button{border:0;border-radius:9px;padding:8px 10px;background:#243958;color:#fff}.saveditem .deleteSaved{background:#3b2028;color:#ffd9df}.conditionTag{display:inline-flex;align-items:center;margin-top:8px;padding:4px 8px;border:1px solid #665328;border-radius:999px;background:#211b0b;color:#f3d77e;font-size:11px;font-weight:800}.conditionLine{display:block;margin-top:4px;color:#d7bb69;font-size:11px;line-height:1.45}.dataNotice{border-color:#514522;background:linear-gradient(180deg,rgba(43,35,13,.7),rgba(16,22,31,.97))}
 .note{font-size:12px;line-height:1.55;color:var(--muted);margin-top:13px}.footer{text-align:center;color:#8f8a7e;font-size:11px;margin-top:20px;line-height:1.7}.footer strong{color:var(--gold);letter-spacing:.6px}
 
 .badgeBtn{appearance:none;cursor:pointer}.resultHero{display:flex;flex-direction:column;align-items:center;gap:4px}
@@ -37,6 +37,7 @@ button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid 
 .suggestions{overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
 .suggestion{min-height:44px}
 .lv,.tab,.action{min-height:44px}
+@media(max-width:520px){.compareGrid{grid-template-columns:1fr}.compareVs{min-height:22px}.compareVs::after{content:"VS"}.compareVs{font-size:0}}
 @media(max-width:420px){.wrap{padding:12px 10px 28px}.brand{padding-top:10px}.podium{font-size:24px}.subtitle{font-size:14px}.card{padding:12px;border-radius:14px}.total{font-size:42px}.toolbar{grid-template-columns:1fr 1fr}.toolbar .primary{grid-column:auto}.resultMeta{grid-template-columns:1fr}.levels{gap:6px}.lv{padding:9px 0}.modal{padding:10px}.modalCard{padding:14px;max-height:88vh}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
 @media(min-width:600px){.skillgrid{grid-template-columns:1.4fr 1fr}}
@@ -45,7 +46,7 @@ button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid 
 <body>
 <div class="wrap">
   <header class="brand"><div class="brandMark">⚾</div><div class="podium">PODIUM</div><div class="subtitle">컴프야V26 스킬 계산기</div><div class="brandLine"></div></header>
-  <div class="top"><button id="patchBtn" class="badge badgeBtn" type="button">v1.9 · 업데이트</button></div>
+  <div class="top"><button id="patchBtn" class="badge badgeBtn" type="button">v2.0 · 업데이트</button></div>
   <div class="tabs"><button class="tab on" data-type="hitter">타자</button><button class="tab" data-type="pitcher">투수</button></div>
   <div id="pitcherRoleBox" class="card" style="display:none"><div class="rowtitle"><b>투수 보직</b></div><select id="pitcherRole"><option value="starter">선발</option><option value="reliever">중계</option><option value="closer">마무리</option></select></div>
   <div class="card"><div class="rowtitle"><b>카드 종류</b></div><select id="cardType"><option value="signature">시그니처</option><option value="impact">임팩트</option><option value="national">국가대표</option><option value="gold">골든글러브</option></select></div>
@@ -65,7 +66,8 @@ button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid 
     <div id="breakdown" class="breakdown"></div>
     <div id="globalWarn" class="warn"></div>
   </div>
-  <div class="toolbar"><button id="reset" class="action">초기화</button><button id="save" class="action">조합 저장</button><button id="copyResult" class="action">결과 복사</button><button id="share" class="action primary">링크 공유</button></div>
+  <div class="toolbar"><button id="reset" class="action">초기화</button><button id="setCompare" class="action">비교 담기</button><button id="save" class="action">조합 저장</button><button id="copyResult" class="action">결과 복사</button><button id="share" class="action primary">링크 공유</button></div>
+  <div id="compareBox" class="card compareCard"><div class="rowtitle"><b>조합 비교</b><span class="badge">A ↔ B</span></div><div id="compareContent"></div><div class="compareActions"><button id="replaceCompare" class="action">현재 조합을 A로</button><button id="clearCompare" class="action">비교 종료</button></div></div>
   <div class="card dataNotice"><div class="rowtitle"><b>계산 안내</b></div><div class="note" style="margin:0">괄호 안의 포지션·타순·주루·좌우타·버프 조건까지 충족했을 때의 점수입니다. 계산기는 조건 충족 여부를 자동으로 판단하지 않습니다.</div></div>
   <div id="savedBox" class="card saved"><div class="rowtitle"><b>저장한 조합</b><button id="clearSaved" class="action" style="padding:7px 10px">전체 삭제</button></div><div id="savedList" class="savedlist"></div></div>
   <div class="footer"><strong>Developed by PODIUM</strong><br>출처: 교황 · 조건별 점수표 기준 · v1.9</div>
@@ -73,6 +75,7 @@ button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid 
 <div id="patchModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="patchTitle">
   <div class="modalCard">
     <div class="modalHead"><h2 id="patchTitle">🏆 PODIUM 업데이트</h2><button id="patchClose" class="closeBtn" type="button">닫기</button></div>
+    <div class="patch"><b>v2.0</b><ul><li>현재 조합을 기준으로 다른 조합과 점수·등급을 비교하는 기능 추가</li><li>A·B 조합의 스킬 구성과 점수 차이를 한눈에 표시</li><li>비교 기준 교체와 비교 종료 기능 추가</li></ul></div>
     <div class="patch"><b>v1.9</b><ul><li>조건을 반영하지 못하는 TOP 3 추천 기능 완전 제거</li><li>포지션·타순·주루·좌우타·버프 조건을 선택 화면과 결과에 표시</li><li>현재 입력 자동 저장 및 다음 방문 시 복원</li><li>결과 텍스트 복사와 저장 조합 개별 삭제 추가</li><li>모바일 버튼 배치와 안내 문구 정리</li></ul></div>
     <div class="patch"><b>v1.8</b><ul><li>점수 계산과 등급 확인 기능 중심으로 화면 정리</li><li>고급 스킬 변경권 시뮬레이터는 정확한 확률 확보 전까지 보류</li></ul></div>
     <div class="patch"><b>v1.7</b><ul><li>3개 스킬 선택 전에는 등급을 표시하지 않도록 개선</li><li>초성 검색과 키보드 자동완성 지원</li><li>카드별 기본 레벨과 등급 컷 적용</li></ul></div>
@@ -169,6 +172,7 @@ function render(){
   });
   calc();
   persistCurrent();
+  renderCompare();
 }
 
 function typeLabel(){
@@ -201,6 +205,26 @@ function calc(){
   const messages=[]; if(dup.length)messages.push(`중복 스킬: ${dup.join(', ')}`); if(vals.some(x=>x.missing))messages.push('점수값이 없는 레벨이 포함되어 있습니다.');
   globalWarn.textContent=messages.join(' · '); globalWarn.classList.toggle('show',messages.length>0);
 }
+
+function evaluateSnapshot(x){
+  if(!x||!Array.isArray(x.state)||!DB[x.type]||!CUTS[x.card]) return null;
+  const vals=x.state.slice(0,3).map(v=>{const skill=Number.isInteger(v?.idx)?DB[x.type][v.idx]:null;const raw=skill?.[String(v?.lv)];return skill?{name:skill.name,lv:v.lv,v:raw==null?0:Number(raw),missing:raw==null}:null});
+  if(vals.filter(Boolean).length<3)return null;
+  const sum=vals.reduce((a,v)=>a+(v?.v||0),0),cuts=CUTS[x.card];let idx=-1;for(let i=0;i<cuts.length;i++)if(sum>=cuts[i])idx=i;
+  const grade=idx<0?'기준 미달':idx===3?'종결':LABELS[idx];
+  return {vals,sum,grade,label:x.type==='hitter'?'타자':x.role==='closer'?'투수·마무리':x.role==='reliever'?'투수·중계':'투수·선발',card:x.card==='signature'?'시그니처':x.card==='impact'?'임팩트':x.card==='national'?'국가대표':'골든글러브'};
+}
+function getCompareBase(){return safeJsonParse(localStorage.getItem('cpbv26-compare')||'null',null)}
+function renderCompare(){
+  const base=getCompareBase(),a=evaluateSnapshot(base),b=evaluateSnapshot(snapshot()),box=$('#compareBox'),content=$('#compareContent');
+  if(!a){box.classList.remove('show');content.innerHTML='';return}
+  box.classList.add('show');
+  if(!b){content.innerHTML='<div class="note">비교할 현재 조합의 스킬 3개를 모두 선택해주세요.</div>';return}
+  const side=(title,x,current=false)=>`<div class="compareSide${current?' current':''}"><div class="compareTitle">${title} · ${esc(x.label)} · ${esc(x.card)}</div><div class="compareScore">${x.sum.toFixed(2)}</div><div class="compareGrade">${esc(x.grade)}</div><div class="compareSkills">${x.vals.map(v=>`${esc(v.name)} Lv.${v.lv} · ${v.missing?'값 없음':v.v.toFixed(2)}`).join('<br>')}</div></div>`;
+  const diff=b.sum-a.sum;let summary='두 조합의 점수가 같습니다.';if(diff>0)summary=`B 조합이 ${diff.toFixed(2)}점 더 높습니다.`;if(diff<0)summary=`A 조합이 ${Math.abs(diff).toFixed(2)}점 더 높습니다.`;
+  const contextDiff=(a.label!==b.label||a.card!==b.card)?'<div class="note" style="text-align:center">선수 구분 또는 카드 종류가 달라 단순 점수 비교입니다.</div>':'';
+  content.innerHTML=`<div class="compareGrid">${side('A · 기준 조합',a)}<div class="compareVs">VS</div>${side('B · 현재 조합',b,true)}</div><div class="compareSummary">${summary}</div>${contextDiff}`;
+}
 function buildParams(){const p=new URLSearchParams();if(type!=='hitter')p.set('type',type);if(type==='pitcher'&&pitcherRole!=='starter')p.set('role',pitcherRole);if(cardType.value!=='signature')p.set('card',cardType.value);state.forEach((s,i)=>{if(Number.isInteger(s.idx)){p.set(`s${i+1}`,s.idx);p.set(`l${i+1}`,s.lv)}});return p}
 function saveUrl(push=true){const q=buildParams().toString();const u=location.pathname+(q?'?'+q:'');history[push?'pushState':'replaceState'](null,'',u)}
 function loadParams(){const p=new URLSearchParams(location.search);type=['hitter','pitcher'].includes(p.get('type'))?p.get('type'):'hitter';pitcherRole=['starter','reliever','closer'].includes(p.get('role'))?p.get('role'):'starter';pitcherRoleEl.value=pitcherRole;pitcherRoleBox.style.display=type==='pitcher'?'block':'none';cardType.value=CUTS[p.get('card')]?p.get('card'):'signature';const preset=CARD_LEVEL_PRESETS[cardType.value];state=[0,1,2].map(i=>{const raw=p.get(`s${i+1}`),idx=raw===null?null:Number(raw),lv=Number(p.get(`l${i+1}`));return {idx:Number.isInteger(idx)&&DB[type][idx]?idx:null,lv:[5,6,7,8].includes(lv)?lv:preset[i]}});$$('.tab').forEach(b=>b.classList.toggle('on',b.dataset.type===type))}
@@ -212,6 +236,10 @@ $$('.tab').forEach(b=>b.onclick=()=>{type=b.dataset.type;pitcherRoleBox.style.di
 pitcherRoleEl.onchange=()=>{pitcherRole=pitcherRoleEl.value;state=defaultState();render();saveUrl(false)};
 cardType.onchange=()=>{applyCardLevelPreset();render();saveUrl(false)};
 $('#reset').onclick=()=>{state=defaultState();render();saveUrl(false)};
+
+$('#setCompare').onclick=()=>{if(state.filter(s=>Number.isInteger(s.idx)).length<3){alert('비교 기준으로 담을 스킬 3개를 모두 선택해주세요.');return}try{localStorage.setItem('cpbv26-compare',JSON.stringify(snapshot()));renderCompare();alert('현재 조합을 A 기준으로 담았습니다. 이제 다른 조합을 선택해 비교하세요.')}catch{alert('비교 조합을 저장할 수 없습니다.')}};
+$('#replaceCompare').onclick=()=>{if(state.filter(s=>Number.isInteger(s.idx)).length<3){alert('현재 스킬 3개를 모두 선택해주세요.');return}localStorage.setItem('cpbv26-compare',JSON.stringify(snapshot()));renderCompare()};
+$('#clearCompare').onclick=()=>{localStorage.removeItem('cpbv26-compare');renderCompare()};
 $('#save').onclick=()=>{if(state.filter(s=>Number.isInteger(s.idx)).length<3){alert('스킬 3개를 모두 선택해주세요.');return}const arr=saved();arr.unshift(snapshot());try{localStorage.setItem('cpbv26-saved',JSON.stringify(arr.slice(0,12)));renderSaved();alert('조합을 저장했습니다.')}catch{alert('저장 공간을 사용할 수 없습니다.')}};
 $('#clearSaved').onclick=()=>{localStorage.removeItem('cpbv26-saved');renderSaved()};
 $('#copyResult').onclick=async()=>{const vals=state.map(s=>{const x=Number.isInteger(s.idx)?DB[type][s.idx]:null;const raw=x?.[String(s.lv)];return x?{name:x.name,lv:s.lv,v:raw==null?null:Number(raw)}:null}).filter(Boolean);if(vals.length<3){alert('스킬 3개를 모두 선택해주세요.');return}const sum=vals.reduce((a,x)=>a+(x.v||0),0);const lines=[`[컴프야V26 스킬 계산]`,`${typeLabel()} · ${cardLabel()}`,...vals.map(x=>`${x.name} Lv.${x.lv} — ${x.v==null?'값 없음':x.v.toFixed(2)}점`),`총점 ${sum.toFixed(2)}점 · ${gradeBadge.textContent}`];const text=lines.join('\n');try{await navigator.clipboard.writeText(text);alert('계산 결과를 복사했습니다.')}catch{prompt('아래 결과를 복사하세요.',text)}};
